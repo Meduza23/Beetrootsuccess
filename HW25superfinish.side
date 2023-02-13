@@ -1,0 +1,407 @@
+{
+  "id": "8834d4d9-bbc9-433f-b37f-610101cb3224",
+  "version": "2.0",
+  "name": "HW25",
+  "url": "",
+  "tests": [{
+    "id": "5717f115-d93d-4d2e-b45d-2ccc16d252b7",
+    "name": "TestingRozetkaWebsiteAddToCart",
+    "commands": [{
+      "id": "de881ce7-1b39-4a89-b318-060f4808361c",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/bob-snail-4820219345459/p357768933/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fcb505e8-f301-45ec-933c-8059fd46e219",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "69f3eadc-580c-43cc-8dac-0b3b9bdd94e6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=body > app-root > div > div > rz-product > div > rz-product-navbar > rz-tabs > div > div > ul > li:nth-child(2) > a",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "d2f18aad-82a9-47df-812c-85539b97d6a0",
+      "comment": "",
+      "command": "click",
+      "target": "css=body > app-root > div > div > rz-product > div > rz-product-navbar > rz-tabs > div > div > ul > li:nth-child(2) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecb985fb-f8b7-4800-8bfa-0c65e1d83b25",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/app-root/div/div/rz-product/div/rz-product-tab-characteristics/div/div/main/rz-product-characteristics-list/section/dl/div[1]/dd/ul/li/a",
+      "targets": [],
+      "value": "200 г"
+    }, {
+      "id": "75ddf99a-7e30-4cb6-9c43-f34592888dd1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "xpath=/html/body/app-root/div/div/rz-product/div/rz-product-tab-characteristics/div/div/aside/rz-product-carriage/div/div[3]/div/rz-product-buy-btn/app-buy-button/button",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "c2cd0772-eb49-482d-87b1-d599c40b5478",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/div/rz-product/div/rz-product-tab-characteristics/div/div/aside/rz-product-carriage/div/div[3]/div/rz-product-buy-btn/app-buy-button/button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b161a886-9e83-4024-b791-b98b7a38dd20",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.modal__heading",
+      "targets": [
+        ["css=.modal__heading", "css:finder"],
+        ["xpath=//div[3]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Кошик')]", "xpath:innerText"]
+      ],
+      "value": "Кошик"
+    }, {
+      "id": "c72e789f-9977-4c50-bfb3-9c35bd26cbb5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.modal__close",
+      "targets": [
+        ["css=.modal__close", "css:finder"],
+        ["xpath=(//button[@type='button'])[80]", "xpath:attributes"],
+        ["xpath=//div[3]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b1c230e-3c1e-441e-b541-e662e588c9c8",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.top-information__picture",
+      "targets": [
+        ["css=.top-information__picture", "css:finder"],
+        ["xpath=//img[contains(@src,'https://content2.rozetka.com.ua/banner_header/image_ua/original/311040286.jpg')]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c9b6f27c-182b-4d10-a7a1-ad36f77285b5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.top-information__picture",
+      "targets": [
+        ["css=.top-information__picture", "css:finder"],
+        ["xpath=//img[contains(@src,'https://content2.rozetka.com.ua/banner_header/image_ua/original/311040286.jpg')]", "xpath:img"],
+        ["xpath=//a/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "0ed7309b-b78a-4b01-9d9c-89f977a493f1",
+    "name": "TestingRozetkaWebsiteUsingSearchButtonAndCheckingElements",
+    "commands": [{
+      "id": "344967e8-c48b-470c-9a0d-98aaf014a247",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f0292696-77ec-4966-a525-5c62be64dc29",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b61a5ac6-5d5b-4699-a5d2-22a904002540",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=/html/body/app-root/div/div/rz-header/rz-main-header/header/div/div/div/form/div/div/input",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "ed090b04-8ee9-469a-b673-229f9d2bdce3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/div/rz-header/rz-main-header/header/div/div/div/form/div/div/input",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7469f5f-66f3-4c8c-99b2-14b19021d2d8",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html/body/app-root/div/div/rz-header/rz-main-header/header/div/div/div/form/div/div/input",
+      "targets": [],
+      "value": "цукерки"
+    }, {
+      "id": "ac2ca56b-c74f-44f1-940f-e7e8431c5e88",
+      "comment": "",
+      "command": "click",
+      "target": "css=body > app-root > div > div > rz-header > rz-main-header > header > div > div > div > form > button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8049b607-0549-4f83-87ec-59c6d638d4f1",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//a[2]/span",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__title", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Набір цукерок Bob Snail Адвент-календар з іграшкою 200 г (4820219345459)')]", "xpath:innerText"]
+      ],
+      "value": "80000"
+    }, {
+      "id": "5997d6ed-207b-4e3c-84d9-aa865442d539",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[2]/span",
+      "targets": [
+        ["css=.catalog-grid__cell:nth-child(1) .goods-tile__title", "css:finder"],
+        ["xpath=//a[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Набір цукерок Bob Snail Адвент-календар з іграшкою 200 г (4820219345459)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1caaaa2a-d8a4-4d2b-b99d-923a68e81f88",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.product-about__description-content > p:nth-child(2)",
+      "targets": [
+        ["css=.product-about__description-content > p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div[2]/div/rz-text-content/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//rz-text-content/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Всередині календаря є 24 таємних віконця, кожне з яких приховує корисний фруктовий смаколик без цукру або колекційну іграшку з героями Фруктотауна.')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "13e124a6-355e-42b2-ae67-b4191dde85e3",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.product-about__description-content > p:nth-child(2)",
+      "targets": [
+        ["css=.product-about__description-content > p:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='#scrollArea']/div[2]/div/rz-text-content/div/div/p[2]", "xpath:idRelative"],
+        ["xpath=//rz-text-content/div/div/p[2]", "xpath:position"],
+        ["xpath=//p[contains(.,'Всередині календаря є 24 таємних віконця, кожне з яких приховує корисний фруктовий смаколик без цукру або колекційну іграшку з героями Фруктотауна.')]", "xpath:innerText"]
+      ],
+      "value": "Всередині календаря є 24 таємних віконця, кожне з яких приховує корисний фруктовий смаколик без цукру або колекційну іграшку з героями Фруктотауна."
+    }]
+  }, {
+    "id": "fbedb37a-a85e-4b0b-85cd-2d774dca16c8",
+    "name": "TestingMolokiyaWebsite",
+    "commands": [{
+      "id": "098f0443-45ac-46af-9d1f-86d036bbabc3",
+      "comment": "",
+      "command": "open",
+      "target": "https://molokija.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c9a615b-e5bd-4a7c-8868-c633e852c883",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1ac90b5-ba5e-48f6-a474-7fbca918f8e2",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=/html/body/div[3]/div[1]/div[1]/section[1]/div[2]/div/div[2]/div[3]/a",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "923bc22e-1003-4cfb-bcb8-1f65295d0182",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[3]/div[1]/div[1]/section[1]/div[2]/div/div[2]/div[3]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3882c0c8-9be1-48cb-896e-0976b0ecd7e3",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=body > div.out.loaded > header > div.container > div > div.header__nav.js-header-nav > ul > li:nth-child(7) > a",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "1c8f87f4-95be-4a64-9871-600cc4c94443",
+      "comment": "",
+      "command": "click",
+      "target": "css=body > div.out.loaded > header > div.container > div > div.header__nav.js-header-nav > ul > li:nth-child(7) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce4a2325-2fdb-4d4f-acee-0497621a2647",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[3]/div/div/div/h1",
+      "targets": [],
+      "value": "КОНТАКТИ КОМПАНІЇ «МОЛОКІЯ»"
+    }, {
+      "id": "fdd40c60-f857-4c52-945d-6cc1f1d213d3",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=body > div.out.loaded > header > div.container > div > div.header__nav.js-header-nav > ul > li:nth-child(6) > a",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "adf20bd4-6b8c-4d79-b86b-0811e658f7b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=body > div.out.loaded > header > div.container > div > div.header__nav.js-header-nav > ul > li:nth-child(6) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4815bd82-6fdb-4e43-941b-4c14666be269",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/div[3]/div/div/div[1]/div/div/p[1]",
+      "targets": [],
+      "value": "Компанія «Молокія» – це велика сім'я, в якій немає зайвих людей. Усі свої."
+    }]
+  }, {
+    "id": "66564650-6b68-4980-ad0e-59ac394f53a0",
+    "name": "TestingRozetkaWebsiteContacts",
+    "commands": [{
+      "id": "f2eb7fe0-f5b9-45d8-8201-89368469cbb4",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cd2397b1-85b5-418e-99ae-16ad5f04264c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8914df7b-becd-4265-9f66-0306f6e0013c",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=body > app-root > div > div > rz-main-page > div > aside > rz-main-page-sidebar > div.fat-wrap > rz-sidebar-fat-menu > div > ul > li:nth-child(1) > a",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "c7ebc673-2318-4b0e-8126-552a762b6b0e",
+      "comment": "",
+      "command": "click",
+      "target": "css=body > app-root > div > div > rz-main-page > div > aside > rz-main-page-sidebar > div.fat-wrap > rz-sidebar-fat-menu > div > ul > li:nth-child(1) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "244e652b-71cf-4c9d-a521-23c36a8c9813",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=body > app-root > div > div > rz-super-portal > div > main > section > div:nth-child(3) > rz-dynamic-widgets > rz-widget-list:nth-child(3) > section > ul > li:nth-child(5) > rz-list-tile > div > a.tile-cats__heading.tile-cats__heading_type_center.ng-star-inserted",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "7a81392f-0c74-4835-b6ad-c7de40e993e7",
+      "comment": "",
+      "command": "click",
+      "target": "css=body > app-root > div > div > rz-super-portal > div > main > section > div:nth-child(3) > rz-dynamic-widgets > rz-widget-list:nth-child(3) > section > ul > li:nth-child(5) > rz-list-tile > div > a.tile-cats__heading.tile-cats__heading_type_center.ng-star-inserted",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "933de30d-58d2-4424-a1ca-cd5b4ab18e6b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/app-root/div/div/rz-category/div/main/div[1]/rz-breadcrumbs/ul/li[3]/span",
+      "targets": [],
+      "value": "Планшети"
+    }, {
+      "id": "24952e3a-3c01-4097-a7f2-47e707d58629",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/app-root/div/div/rz-category/div/main/rz-catalog/div/div/aside/rz-filter-stack/div[1]/div/rz-scrollbar/div/div[1]/div/div/rz-filter-checkbox/ul[1]/li[1]/a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "409be252-501c-43ef-b513-761b7a4b73d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=body > app-root > div > div > rz-category > div > main > rz-catalog > div > div > aside > rz-filter-stack > div:nth-child(27) > div > rz-scrollbar > div > div.scrollbar__inner > div > div > rz-filter-checkbox > ul:nth-child(1) > li:nth-child(5) > a",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7f228898-1249-4efb-aa6c-a7dba172e587",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=/html/body/app-root/div/div/rz-category/div/main/rz-catalog/div/rz-catalog-settings/div/rz-selected-filters/div/p",
+      "targets": [],
+      "value": "Обрано 15 товарів"
+    }]
+  }, {
+    "id": "033a3e13-08af-4d0a-8d62-5ca3461f2982",
+    "name": "TestingRozetkaWebSiteCatalog",
+    "commands": [{
+      "id": "a5a41aa7-34fb-49c3-bd17-fa273ce774e7",
+      "comment": "",
+      "command": "open",
+      "target": "https://rozetka.com.ua/bob-snail-4820219345459/p357768933/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fc1f96e-bfc2-4f42-bd83-830c9a36c422",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1280x1024",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbe7f0f2-64cd-4922-9a12-da31b113e880",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "id=fat-menu",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "6dcf4665-cd94-4857-9fc1-165cc58524be",
+      "comment": "",
+      "command": "click",
+      "target": "id=fat-menu",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "034428f1-eb47-47bd-8601-02923b506ba6",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=/html/body/app-root/div/div/rz-main-page/div/main/rz-main-page-content/rz-goods-sections/section[6]/rz-goods-section/ul/li[2]/rz-app-tile/div/div/a[2]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "165da60b-f9ce-466e-99ee-62d74bd3396d",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=/html/body/app-root/div/div/rz-header/rz-main-header/header/div/div/a/picture/img",
+      "targets": [],
+      "value": "Music"
+    }, {
+      "id": "792c75da-9450-400e-a9f5-8b41321f474e",
+      "comment": "",
+      "command": "click",
+      "target": "id=fat-menu",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a6cf9623-d311-4cd6-b01b-f4edd9c0bc66",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5717f115-d93d-4d2e-b45d-2ccc16d252b7"]
+  }],
+  "urls": [],
+  "plugins": []
+}
